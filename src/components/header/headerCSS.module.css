@@ -1,0 +1,82 @@
+/* 
+** The Header Media Queries **
+** Tweak as per your needs **
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+.wrapper {
+  max-width: 1140px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+:global(a) {
+  text-decoration: none;
+  color: #222;
+}
+
+
+/**/
+.brand {
+  font-weight: bold;
+  font-size: 20px; }
+
+.site-header {
+  position: relative;
+  background-color: #78787e98; }
+
+.site-header__start {
+  display: flex;
+  align-items: center; }
+
+.site-header__end {
+  display: flex;
+  align-items: center; }
+
+.site-header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-top: 0;
+  padding-bottom: 0; }
+
+
+.nav__wrapper {
+    display: flex; } 
+
+
+.nav__item:not(:last-child) {
+  margin-right: 0.5rem; }
+
+.nav__item a {
+  display: block;
+  padding: 1rem;
+  border-left: 4px solid transparent; }
+
+.nav__item a {
+      text-align: center;
+      border-left: 0;
+      border-bottom: 4px solid transparent;} 
+.nav__item svg {
+  display: inline-block;
+  vertical-align: middle;
+  width: 28px;
+  height: 28px;
+  margin-right: 1rem; }
+
+.nav__item svg {
+      display: block;
+      margin: 0 auto 0.5rem; } 
+
+
+.nav__item.active a {
+      border-bottom-color: #222; }
+
+
+
+.inactive-item {
+  opacity: 0; }
