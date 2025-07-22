@@ -12,10 +12,6 @@
   margin-right: auto;
 }
 
-:global(a) {
-  text-decoration: none;
-  color: #222;
-}
 
 
 /**/
