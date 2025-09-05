@@ -7,8 +7,9 @@ export default async function Home() {
   console.log((slectt[0]));
   return (
     <div>
+      <h1>Sveiki</h1>
       <pre>{JSON.stringify(slectt, null, 2)}</pre>
-      <h5></h5>
+      
     </div>
   );
 }
