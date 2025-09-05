@@ -1,0 +1,33 @@
+.card {
+  background: #4d4a4a;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  padding: 1rem;
+  margin: 1rem;
+  min-width: 220px;
+  max-width: 300px;
+  display: inline-block;
+  vertical-align: top;
+  cursor: pointer;
+  text-decoration: none;
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+.card:hover {
+  box-shadow: 0 4px 16px rgba(0,0,0,0.18);
+  transform: translateY(-4px) scale(1.03);
+}
+.card h2 {
+  margin-top: 0;
+  font-size: 1.2rem;
+  color: #ffffff;
+}
+.card ul {
+  list-style: none;
+  padding: 0;
+}
+.card li {
+  margin-bottom: 0.5rem;
+}
+
+
+

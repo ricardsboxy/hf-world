@@ -1,78 +1,45 @@
-/* 
-** The Header Media Queries **
-** Tweak as per your needs **
-*/
-
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
-.wrapper {
-  max-width: 1140px;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  margin-left: auto;
-  margin-right: auto;
+.nav__wrapper {
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
 }
 
+.nav__item {
+  list-style: none;
+  transition: background 0.2s, border-bottom 0.2s;
+  border-radius: 6px 6px 0 0;
+}
 
+.nav__link {
+  display: block;
+  padding: 1rem 1.5rem;
+  text-decoration: none;
+  color: #fff;
+  background: transparent;
+  transition: background 0.2s, color 0.2s;
+}
 
-/**/
-.brand {
-  font-weight: bold;
-  font-size: 20px; }
+.nav__item:hover .nav__link,
+.nav__item.active .nav__link {
+  background: #222;
+  color: #ffd700;
+}
+
+.active .nav__link {
+  border-bottom: 3px solid #ffd700;
+  background: #222;
+  color: #ffd700;
+}
 
 .site-header {
-  position: relative;
-  background-color: #78787e98; }
-
-.site-header__start {
-  display: flex;
-  align-items: center; }
-
-.site-header__end {
-  display: flex;
-  align-items: center; }
+  background: linear-gradient(90deg, #4d4a4a 0%, #78787e98 100%);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
 
 .site-header__wrapper {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  padding-top: 0;
-  padding-bottom: 0; }
-
-
-.nav__wrapper {
-    display: flex; } 
-
-
-.nav__item:not(:last-child) {
-  margin-right: 0.5rem; }
-
-.nav__item a {
-  display: block;
-  padding: 1rem;
-  border-left: 4px solid transparent; }
-
-.nav__item a {
-      text-align: center;
-      border-left: 0;
-      border-bottom: 4px solid transparent;} 
-.nav__item svg {
-  display: inline-block;
-  vertical-align: middle;
-  width: 28px;
-  height: 28px;
-  margin-right: 1rem; }
-
-.nav__item svg {
-      display: block;
-      margin: 0 auto 0.5rem; } 
-
-
-.nav__item.active a {
-      border-bottom-color: #222; }
-
-
-
-.inactive-item {
-  opacity: 0; }
+  padding: 0.5rem 0;
+}
